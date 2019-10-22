@@ -53,7 +53,7 @@ else{
 		$temp['LNAME'] = $lname; 
 		$temp['EMAIL'] = $mail; 
 		$temp['PWORD'] = $pword; 
-        $temp['PHONE'] = $phone; 
+        	$temp['PHONE'] = $phone; 
 		array_push($results, $temp);
 	}
 	$stmt->close();
