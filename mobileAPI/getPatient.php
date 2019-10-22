@@ -35,10 +35,10 @@ else{
 		$temp['LNAME'] = $lname; 
 		$temp['EMAIL'] = $mail; 
 		$temp['PWORD'] = $pword; 
-        $temp['PHONE'] = $phone; 
+        	$temp['PHONE'] = $phone; 
 		$temp['DOB'] = $dob; 
 		$temp['GENDER'] = $gender;
-        $temp['HISTORY'] = $history; 
+        	$temp['HISTORY'] = $history; 
 		array_push($results, $temp);
 	}
 	$stmt->close();
