@@ -37,7 +37,7 @@ else{
 	$sql_query = "SELECT * FROM {$table2} WHERE id = {$idprof};"; 
 	$stmt = $conn->prepare($sql_query);
 
-//executing the query 
+	//executing the query 
 	$stmt->execute();
 	
 	//binding results to the query 
