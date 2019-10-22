@@ -29,6 +29,7 @@ if (!mysqli_query($conn, $sql)){
     echo "insertion error";
     die();
 }
+// Return id of successfully inserted patient.
 $patientId = mysqli_insert_id($conn);
 echo "{$patientId}";
 
