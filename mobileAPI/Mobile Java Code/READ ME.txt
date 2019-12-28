@@ -1,2 +1,0 @@
-This java class belongs to the mobile app. It makes use of the Volley API to make requests to the API's PHP scripts on the
-server. These in turn, process the requests, perform the relevant database operations and return the results to the app.
