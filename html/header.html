@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href='../resources/styleSheet.css'>
+	<script type="text/javascript" src="../js/jsFunctions.js"></script>
+</head>
+
+<div class='header' id='header'>
+
+	<div class="topBar" id="topBar" style = "background-color:#404040">
+		<span id = 'userText' style = "border-radius: 25px;float:left;color:white;font-size: 17px;padding: 12px 8px;">
+			Visitor [not logged in]</span>
+		<a href="javascript:void(0);" style = "border-radius: 25px;" id="loginLink" onclick="document.getElementById('logInDialog').style.display='block'" >Log In</a>
+		<a href="javascript:void(0);" style = "border-radius: 25px;" id="signupLink" onclick="document.getElementById('signUpDialog').style.display='block'" >Sign Up</a>
+	</div>
+
+
+	</br></br>
+	<span class="subHeading">The</span>
+	<img class="logo" src="../resources/MediLogo.png"  alt="Logo" height="60" width="175">
+	<span class="subHeading">Web Portal</span>
+	<span class="standardLine">For medical and insurance professionals</span>
+	</br></br>
+	<div class="navBar" id="navBar" style="font-family:'Eras ITC';font-size: 14px;" >
+		<span class='search' id='search'>
+			<form action = "../php_pages/formHandler.php">
+				<input type='search' placeholder="Search.." name="search" required>
+				<button class='search' type="submit"></button>
+			</form>
+		</span>
+		<a href="../php_pages/index.php" id="home" style = "border-radius: 25px;">Home</a></li>
+		<a href="../php_pages/browsePatients.php" id="browse" style = "border-radius: 25px;">Browse Patients</a></li> 
+	</div>
+</div>
+<body class="body">
+
+</br></br></br></br>
+
+
+
+
+
+

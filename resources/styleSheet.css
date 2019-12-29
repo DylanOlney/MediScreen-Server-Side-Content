@@ -1,0 +1,586 @@
+﻿html {
+    overflow-y: scroll;
+}
+
+.header {
+	color: #808080;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+	text-align: center;
+	white-space:nowrap;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.body {
+	background-color: #808080;
+	color: #404040; 
+    left: 0;
+	padding-top: 150px;
+    width: 100%;	
+
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:  #333;
+    color: white;
+    text-align: center;
+}
+
+.footer a{
+	color: green;
+}
+
+.navBar{
+	overflow: hidden;
+	background-color: #333;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+  }
+  
+.navBar a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	border-radius: 25px;
+	
+  }
+  
+.navBar a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+.navBar a.active {
+	background-color: #4CAF50;
+	
+	color: white;
+  }
+
+.navBar a:hover:not(a.active) {
+	background-color: #111;
+	color: white;
+}
+.navBar a:not(a.active) {
+
+	color: white;
+}
+
+.navBar:last-child {
+    border-right: none;
+} 
+
+.topBar {
+	float: right;
+	overflow: hidden;
+	background-color:black;
+	
+}
+
+.topBar a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 12px 8px;
+	
+	background-color:black;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  
+.topBar a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+.topBar a.active {
+	background-color: #4CAF50;
+	color: white;
+  }
+
+
+
+span.search{
+    float: right;
+	
+}
+
+button.search {
+	width: 33px;
+	height: 33px;
+	float: right;
+	padding: 6px;
+	margin-top: 6px;
+    margin-right:6px;
+	border: none;
+	cursor: pointer;
+	background-image:url('search.png');
+  }
+
+
+
+input[type="search"] {
+	float: left;
+	padding: 6px;
+	margin-top: 8px;
+	margin-right:1px;
+  }
+
+  
+input[type="radio"] {
+	margin-left: 50px;
+  }
+
+input[type="submit"] {
+	margin-left: 50px;
+	width: 75px;
+}   
+
+
+
+
+
+	
+
+a:link {
+
+	
+	/* color: #404040;  */
+	text-decoration:none;
+	/* text-shadow: 5px 5px 5px rgba(0,0,0,0.5); */
+
+
+} 
+/* visited link */
+
+/* mouse over link */
+a:hover {
+	color:orange;
+
+
+}
+/* selected link */
+a:active {
+	color: #4CAF50;
+
+}
+
+a.undecorated {
+	text-decoration:none;
+	
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+}
+
+.background {
+	background-color: #808080;
+	color: #404040; 
+	
+}
+
+.logo {
+	/* background-color: #A0A0A0; */
+	background-color: #4CAF50;
+	color: white;
+	margin-left: 25px;
+	margin-right: 15px;
+	border-width: 7px;
+	border-style:outset;
+	border-color:#A0A0A0;
+	border-radius: 45px;
+	box-shadow: 15px 15px 10px rgba(0,0,0,0.5);
+	padding: 15px;
+	font-family: "Eras ITC";
+	font-size: 66px;
+	font-style: normal;
+	font-weight: bold;
+}
+.subHeading {
+	
+	font-family: "Eras ITC";
+	font-size: 50px;
+	font-style: normal;
+	font-weight: bold;
+	margin-left: 20px;
+}
+.standardLine {
+	font-family: "Eras ITC";
+	font-size: 33px;
+	font-style: normal;
+	margin-left: 10px;
+	margin-top:12px;
+	margin-bottom:12px;
+
+}
+.mediumLine {
+	font-family: "Eras ITC";
+	font-size: 26px;
+	font-style: normal;
+	margin-left: 10px;
+	margin-top:12px;
+	margin-bottom:12px;
+
+}
+
+.smallLine {
+	font-family: "Eras ITC";
+	font-size: 20px;
+	font-style: normal;
+	margin-left: 10px;
+	margin-top:12px;
+	margin-bottom:12px;
+
+}
+
+.tinyLine {
+	font-family: "Eras ITC";
+	font-size: 15px;
+	font-style: normal;
+	margin-left: 10px;
+	margin-top:12px;
+	margin-bottom:12px;
+
+}
+.label {
+	font-family: "Eras ITC";
+	font-size: 33px;
+	font-style: normal;
+	margin-bottom: 15px;
+}
+.thumb {
+	/*border-style: solid;
+	border-width: 1px;  */
+	border-color: orange;
+	border-radius: 10px;
+	box-shadow: 15px 15px 10px rgba(0,0,0,0.5);
+	width: 280px;
+	height: 132px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.thumb:hover {
+	border-color: orange;
+	box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+	width: 276px;
+	height: 130px;
+	margin-right: 52px;
+	margin-left: 52px;
+	margin-top: 21px;
+	margin-bottom: 21px;
+}
+.thumb:active {
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+	border-color: lime;
+	width: 272px;
+	height: 128px;
+	margin-right: 54px;
+	margin-left: 54px;
+	margin-top: 22px;
+	margin-bottom: 22px;
+
+}
+
+.clientLink {
+	background-color: #A0A0A0;
+	border-style: solid;
+	border-width: 1px; 
+	border-color: red;
+	border-radius: 10px;
+	box-shadow: 15px 15px 10px rgba(0,0,0,0.5);
+	width: 150px;
+	height: 200px;
+	text-align:center;
+	padding-bottom:5px;
+	padding-top:25px;
+    margin-bottom: 25px;
+
+}
+
+.clientLink:hover{
+	border-color:orange;
+}
+
+.list{
+	background-color:#A0A0A0;
+    color: white; 
+	font-size:33px;
+	font-family: "Eras ITC";
+
+
+	width:700px;
+	margin-left: 50px;
+	border-width: 4px;
+	border-style:outset;
+	border-color:red;
+	border-radius: 10px;
+	box-shadow: 15px 15px 10px rgba(0,0,0,0.5);
+	padding: 15px;
+	font-style: normal;
+	
+
+}
+
+
+.split {
+	height: 100%;
+	width: 50%;
+	position: fixed;
+	z-index: 1;
+	top: 200;
+	overflow-x: hidden;
+	padding-top: 200px;
+  }
+  
+  /* Control the left side */
+  .left {
+	left: 0;
+	
+  }
+  
+  /* Control the right side */
+  .right {
+	right: 0;
+	
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+  }
+  
+  /* Style the image inside the centered container, if needed */
+  .centered img {
+	width: 150px;
+	border-radius: 50%;
+  }
+
+ 
+
+/* The Modal (background)
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 200px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+.modal-content {
+	background-color: #808080;
+	color:black;
+    margin: auto;
+    padding: 20px;
+	border: 2px solid rgb(0,0,0);
+	text-align: center;
+	font-family: "Eras ITC";
+	font-size: 33px;
+	font-style: normal;
+	
+	width: 50%;
+	height: 30%;
+}
+
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.labelClass{
+    float: left;
+    width: 113px;
+  } */
+
+  /* Full-width input fields */
+  /* body {font-family: Arial, Helvetica, sans-serif;} */
+
+  input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+
+
+.pageBtn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	box-shadow: 15px 15px 10px rgba(0,0,0,0.5);
+	border-radius: 25px;
+	border-width: 4px;
+	border-style:outset;
+	width:250px;
+	cursor: pointer;
+	outline: none !important;
+}
+
+.pageBtn:active{
+	box-shadow:none;
+	margin-top: 10px;
+	margin-left: 10px;
+
+}
+
+/* Set a style for all buttons */
+.btn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+.btn:hover {
+	opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+	width: auto;
+	padding: 8px 20px;
+	margin: 8px 0;
+	border: none;
+	color: white;
+	background-color: #f44336;
+}
+
+.flatbtn {
+	width: auto;
+	padding: 8px 20px;
+	margin: 8px 0;
+	border: none;
+	color: white;
+	background-color:#4CAF50; 
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+	position: relative;
+}
+
+img.avatar {
+	width: 40%;
+	border-radius: 50%;
+}
+
+.container {
+	padding: 16px;
+}
+
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe; 
+	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+	/* border: 2px solid  #000; */
+	width: 400px; /* Could be more or less, depending on screen size */
+	height:400px;
+	
+}
+
+/* The Close Button (x) */
+.close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: red;
+	cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+	from {-webkit-transform: scale(0)} 
+	to {-webkit-transform: scale(1)}
+}
+	
+@keyframes animatezoom {
+	from {transform: scale(0)} 
+	to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+	span.psw {
+	   display: block;
+	   float: none;
+	}
+	.cancelbtn {
+	   width: 100%;
+	}
+}

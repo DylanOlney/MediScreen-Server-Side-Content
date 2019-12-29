@@ -1,0 +1,214 @@
+
+
+
+<!-- User log-in dialog -->
+	<div id="logInDialog" class="modal" >
+		<form id = "logInForm" class="modal-content animate" method = 'post' action="../php_pages/formHandler.php">
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('logInDialog').style.display='none'" class="close" title="Close Modal">&times;</span>
+			</div>
+			<input type="hidden" name="signIn" value='signIn'> 
+			<div class="container" >
+				<span style="font-family:'Eras ITC';font-size: 26px;"><b>Log-in form.</b></span></br></br></br>
+				<label for="email"><b>E-mail</b></label>
+				<input type="text" placeholder="Enter email" name="email" required>
+
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="pword" required>
+
+				<button type="submit"   class='btn'>Login</button>
+				<label>
+					<input type="checkbox" checked="checked" name="remember"> Remember me
+				</label>
+			</div>
+			<div class="container" style="background-color:#f1f1f1">
+				<button type="button" onclick="document.getElementById('logInDialog').style.display='none'" class="cancelbtn">Cancel</button>
+				<span class="psw">Forgot <a href="#">password?</a></span>
+			</div>
+		</form>
+		<form id = "loggedInForm" class="modal-content" style = "display:none" action="">
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('logInDialog').style.display='none'" class="close" title="Close Modal">&times;</span>
+			</div>
+			<div class="container">
+				<p style="font-family:'Eras ITC';font-size: 26px;"><b>Login Successful</b></p>
+				<p id = "loginName" style="font-family:'Eras ITC';font-size: 17px;"><b>bahdly blahhh. </b></p>
+			</br></br> </br></br></br></br>
+			</div>
+			<div class="container" style="background-color:#f1f1f1">
+				<button type="button" onclick="document.getElementById('logInDialog').style.display='none'" class="btn">OK</button>
+			</div>
+		</form>
+	</div>
+
+
+<!-- User Log-out  dialog -->
+<div id="logOutDialog" class="modal">
+	<form class="modal-content animate" method = 'post' action="../php_pages/formHandler.php">
+		<input type="hidden" name="logout" value="true">
+		<div class="imgcontainer">
+			<span onclick="document.getElementById('logOutDialog').style.display='none'" class="close" title="Close Modal">&times;</span>
+		</div>
+		<div class="container">
+			<p style="font-family:'Eras ITC';font-size: 26px;"><b>Confirm Log out!</b></p>
+
+			<p style="font-family:'Eras ITC';font-size: 17px;">Click OK below to log out and return to home page, or the 'X' button above to cancel.</p>
+			<p style="font-family:'Eras ITC';font-size: 17px;">Thanks for using Medi-Screen. Were looking forward to your next session.</p>
+			</br></br> </br></br></br></br>
+		</div>
+		<div class="container" style="background-color:#f1f1f1">
+			<button type="submit"  class="btn">OK</button>
+		</div>
+	</form>
+</div>
+
+
+
+
+<!-- User registered  dialog -->
+<div id="registeredOK" class="modal">
+	<form class="modal-content animate" >
+		<div class="imgcontainer">
+			<span onclick="document.getElementById('registeredOK').style.display='none'" class="close" title="Close Modal">&times;</span>
+		</div>
+		<div class="container">
+			<p style="font-family:'Eras ITC';font-size: 26px;"><b>Registered!</b></p>
+			<p style="font-family:'Eras ITC';font-size: 17px;">Welcome. You are now a registered user 
+				of this site and may access all of it's features</p>
+			</br></br> </br></br></br></br>
+		</div>
+		<div class="container" style="background-color:#f1f1f1">
+			<button type="button" onclick="document.getElementById('registeredOK').style.display='none'" class="btn">OK</button>
+		</div>
+	</form>
+</div>
+
+<div id="reportSubmitted" class="modal">
+	<form class="modal-content animate" >
+		<div class="imgcontainer">
+			<span onclick="document.getElementById('reportSubmitted').style.display='none'" class="close" title="Close Modal">&times;</span>
+		</div>
+		<div class="container">
+			<p style="font-family:'Eras ITC';font-size: 26px;"><b>Report Submitted!</b></p>
+			<p style="font-family:'Eras ITC';font-size: 17px;">Patient's risk report has been submitted and stored in our database. You may update it or overwrite it at any time!</p>
+			</br></br> </br></br></br></br>
+		</div>
+		<div class="container" style="background-color:#f1f1f1">
+			<button type="button" onclick="document.getElementById('reportSubmitted').style.display='none'" class="btn">OK</button>
+		</div>
+	</form>
+</div>
+
+
+<!--  -->
+<div id="patientRisk" class="modal">
+	<form class="modal-content animate" >
+		<div class="imgcontainer">
+			<span onclick="document.getElementById('patientRisk').style.display='none'" class="close" title="Close Modal">&times;</span>
+		</div>
+		<div class="container">
+			<p style="font-family:'Eras ITC';font-size: 26px;"><b>Medi-AI Response!</b></p>
+			<p id = "riskMessage" style="font-family:'Eras ITC';font-size: 17px;"></p>
+			<p id = "riskPercentage" style="font-family:'Eras ITC';font-size: 26px;text-align: center;"></p>
+			<p id = "accracyMessage" style="font-family:'Eras ITC';font-size: 17px;text-align: center;"></p>
+			</br></br> </br></br></br></br>
+		</div>
+		<div class="container" style="background-color:#f1f1f1">
+			<button type="button" onclick="document.getElementById('patientRisk').style.display='none'" class="btn">OK</button>
+		</div>
+	</form>
+</div>
+
+<!-- User Sign-Up dialog -->
+	<div id="signUpDialog" class="modal">
+		<form class="modal-content animate" style = 'height:500px;' method = 'post' action="../php_pages/formHandler.php">
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('signUpDialog').style.display='none'" class="close" title="Close Modal">&times;</span>
+			</div>
+			<input type="hidden" name="signUp" value='signUp'> 
+			<div class="container">
+				<p style="font-family:'Eras ITC';font-size: 26px;"><b>Sign-up form.</b></p>
+				<p style="font-family:'Eras ITC';font-size: 17px;">Enter your details and click submit:</p>
+				<table>
+					<tr>
+						<td style='float: right;'><label for='fname'>First Name:</label></td>
+						<td style='padding-left:10px;'><input  style='width:250px;' id='fname' name='fname' required></td>
+					</tr>
+					<tr>
+						<td style='float: right;'><label for='lname'>Last Name:</label></td>
+						<td style='padding-left:10px;'><input  style='width:250px;' id='lname' name='lname' required>
+						</td>
+					</tr>
+					<tr>
+						<td style='float: right;'><label for='phone'>Phone:</label></td>
+						<td style='padding-left:10px;'><input  style='width:250px;' id='phone' name='phone' required>
+						</td>
+					</tr>
+					
+
+					
+					<tr>
+						<td style='float: right;'><label for='email'>E-mail:</label></td>
+						<td style='padding-left:10px;'><input  type='email' placeholder="Enter your email" style='width:250px;' id='email' name='email' required>
+						</td>
+					</tr>
+					
+					<tr>
+						<td style='float: right;'><label for='password' style='margin-top:10px;'></label></td>
+						<td style='padding-left:10px;'><input  type='password' placeholder="Create a password" style='width:254px;height:25px;' id='pword' name='pword' required>
+						</td>
+					</tr>
+					<tr>
+						<td style='float: right;'><label for='profession'>Profession:</label></td>
+						<td> 
+							<input   type="radio" id='doctor' name='profession' value = 'doctor' required> Medical Professional<br>
+							<input   type="radio" id='insurance' name='profession' value = 'insurance' required> Insurance Professional <br><br>
+						</td>
+					</tr>
+					<tr>
+						<td style='float: right;'><label for=''></label></td>
+						<td style='padding-left:10px;'><button type="submit" class='btn' value="Submit">Submit</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="container" style="background-color:#f1f1f1">
+				<button type="button" onclick="document.getElementById('signUpDialog').style.display='none'" class="cancelbtn">Cancel</button>
+
+			</div>
+		</form>
+	</div>
+
+
+	
+
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+<!-- <script>
+    var modal1 = document.getElementById('logInDialog');
+    var modal2 = document.getElementById('signUpDialog');
+    var modal3 = document.getElementById('logInRequired');
+    var modal4 = document.getElementById('logOutDialog');
+    var modal5 = document.getElementById('id05');
+    window.onclick = function (event) {
+        if (event.target == modal1) modal1.style.display = "none";
+        if (event.target == modal2) modal2.style.display = "none";
+        if (event.target == modal3) modal3.style.display = "none";
+        if (event.target == modal4) modal4.style.display = "none";
+        if (event.target == modal5) modal5.style.display = "none";
+    }
+</script> -->
