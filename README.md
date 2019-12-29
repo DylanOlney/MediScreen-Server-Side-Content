@@ -1,4 +1,4 @@
-This is the source code for all the server-side content of the MediScreen project. 
+This is the source code for all of the server-side content of the MediScreen project. 
 It includes the website source, the Medi-AI source and the Mobile-API source.
 The website and the accompanying MySQL database are run on a XAMPP-powered stack (Appache, MySQL and PHP).
 
