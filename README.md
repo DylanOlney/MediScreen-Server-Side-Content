@@ -1,5 +1,5 @@
 # MediScreen-Website
-This is the source code for the website of the MediScreen project. The site and the accompanying MySQL database are run on a XAMPP-powered stack (Appache, MySQL and PHP).
+This is the source code for the website of the MediScreen project. The website and the accompanying MySQL database are run on a XAMPP-powered stack (Appache, MySQL and PHP).
 
 The website is intended for participating medical and insurance professionals. Professionals, once registered and logged in, can view a list of patients/clients registered to them, select any one and view their details. If a patient/client has entered sufficient medical data via their mobile app, professionals can get an estimate of that patient's risk of developing certain medical conditions through the Medi-AI service. Professionals may also create reports which are persisted to the database and which may be read by a patient through their mobile app. Insurance professionals can view a medical professional's report for a particular patient, but an insurance professional's report is not visible to the patient's medical professional for privacy reasons.
 
